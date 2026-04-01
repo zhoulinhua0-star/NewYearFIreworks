@@ -1,5 +1,5 @@
 # 🎆 New Year Fireworks
-A simple Java Swing animation that displays dynamic fireworks with the text **"新年快乐"** (Happy New Year) - a digital way to celebrate the advent of New Year(mostly for entertaining myself).
+A simple Java Swing animation that displays dynamic fireworks with the text **"新年快乐"** (Happy New Year) - a digital way to celebrate the advent of 2026 New Year(mostly for entertaining myself).
 
 ---
 
