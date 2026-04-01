@@ -17,7 +17,7 @@ public class NewYearFireworks extends JPanel {
     public NewYearFireworks() {
         setBackground(Color.WHITE);
 
-        // 动画刷新（60 FPS 左右）
+        // Around 60fps
         Timer timer = new Timer(16, e -> {
             spawnFirework();
             updateFireworks();
@@ -27,7 +27,6 @@ public class NewYearFireworks extends JPanel {
     }
 
     private void spawnFirework() {
-        // 控制生成频率
         if (random.nextInt(10) != 0) return;
 
         int x = getWidth() / 2 + random.nextInt(200) - 100;
@@ -60,7 +59,6 @@ public class NewYearFireworks extends JPanel {
         }
     }
 
-    // ================= 烟花文字对象 =================
     static class FireworkText {
         double x, y;
         double vx, vy;
@@ -89,12 +87,12 @@ public class NewYearFireworks extends JPanel {
             x += vx;
             y += vy;
 
-            vy += 0.05; // 重力感
+            vy += 0.05; // Create the sense of gravity
             life--;
         }
     }
 
-    // ================= 主窗口 =================
+    // Main method implementation
     public static void main(String[] args) {
         JFrame frame = new JFrame("🎆 新年快乐 · 烟花级别 🎆");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
